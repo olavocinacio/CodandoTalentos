@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+/* --------------------------------------------------------------- */
+.cabecalho {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #436a81, #b9d5fe);
+}
+
+/* Procurar nova fonte */
+.home {
+    color: white;
+    font-family: "Copperplate", Fantasy;
+    text-decoration: none;
+    font-size: 34px;   
+}
+
+/* Mudar para sublinhado surgindo de lado */
+.home:hover {
+    text-decoration: underline;
+    transition: 5ms;
+}
+
+/* --------------------------------------------------------------- */
+.corpo {
+    height: 675px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(244, 249, 253);
+    font-weight: bold;
+}
+
+._imagem{
+   border-radius: 10px;
+   width: 500px;
+   border-color: #436a81;
+   border-width: thick;
+}
+
+
+.login {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #acbdc7;
+    height: 280px;
+    width: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.entrada {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #d3d3d3;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.entrada:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: #6990a6;
+}
+
+.botao:hover{
+    background-color: #426980;
+    cursor: pointer;
+}
+
+/* @media(min-width: 1000px) {
+    ._imagem{
+        width: 10%;
+    }
+    :root{
+        font-size: 62,5%
+    }
+} */
+
+/* --------------------------------------------------------------- */
+
+.footer {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.rodape{
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #436a81, #b9d5fe);
+}
+
+.dev {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}

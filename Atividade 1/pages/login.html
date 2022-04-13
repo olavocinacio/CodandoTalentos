@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAFio | Login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="../scripts/login.js"></script>
+</head>
+
+<header>
+    <div class="cabecalho">
+        <a href="login.html" class="home">GAFio</a>
+    </div>
+</header>
+
+<body>
+    <div class="corpo">
+        <div class="imagem">
+            <img src="https://i.ytimg.com/vi/VEtKJE8JaL0/mqdefault.jpg" class="_imagem" alt="">
+        </div>
+
+        <div class="login">
+            <h1>~LOGIN~</h1>
+
+            <form action="check_login()" id="loginForm">
+                <label for="email" id="email">Email</label>
+                <input type="text" class="entrada">
+                <label for="password id="password"">Password</label>
+                <input type="text" class="entrada">
+                <button type="submit" class="botao">Login</button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="rodape">
+        <p>Desenvolvido com ❤️ por <a href="https://github.com/olavocinacio" class="dev"> olavocinacio</a> </p>
+        <p>© GAFio - 2022</p>
+    </div>
+</footer>
+
+<script>
+    function check_login(){
+    console.log("Botão clicado");
+    let a = document.getElementById('email');
+    let b = document.getElementById('password');
+    if(a == "" || b == ""){
+        alert("Preencha os campos necessários");
+    }
+}
+</script>
+
+</html>
